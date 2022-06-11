@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Cuprum:wght@500&family=Mochiy+Pop+P+One&family=Poppins:ital,wght@0,400;0,500;0,600;1,500&family=Roboto:wght@300;400;500&display=swap');
+
+:root{
+    --main-color:#e38528;
+}
+
+*{
+    font-family:'Roboto',sans-serif;
+    margin:0;
+padding:0 ;
+box-sizing: border-box;
+text-decoration: none;
+outline: none;
+border: none;
+text-transform: capitalize;
+transition: all 0.2s linear;
+line-height: 1.5;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x:hidden ;
+    scroll-behavior: smooth;
+
+}
+
+body{
+    background: #fcf2e8;
+    padding-left: 30rem;
+}
+
+section{
+    padding: 1rem 5%;
+    min-height: 100vh;
+}
+
+/* custom scrollbar start */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track{
+    border-radius: 5px;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.25);
+}
+
+::-webkit-scrollbar-thumb{
+    border-radius: 5px;
+    background-color: var(--main-color);
+}
+/* custom scrollbar end */
+
+
+/* navbar start */
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    background: #222;
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    z-index: 1000;
+    flex-flow: column;
+    padding: 8rem 2rem;
+    width: 30rem;
+    text-align: center;
+}
+
+header .home .navbar{
+    margin-top: -3rem;
+    }
+
+header .navbar a{
+    display: block;
+    font-size: 2rem;
+    color: #fff;
+    margin: 2.5rem 0;
+
+}
+
+header .navbar a:hover{
+    letter-spacing:1px;
+    color:var(--main-color)
+}
+/* navbar end */
+
+
+/* My Service start */
+.heading{
+    font-size: 3.5rem;
+    padding-bottom: 1rem;
+    color: #111;
+    text-transform: uppercase   ;
+}
+
+.service .heading span{
+    color: var(--main-color);
+}
+
+.service .box-container{
+    display: flex;
+align-items: center;
+justify-content:space-around;
+gap: 3rem;
+
+}
+
+.service .box-container .box{
+    background-color:white;
+    text-align: center;
+    padding: 30px 35px;
+    box-shadow: 0 10px 15px rgba(0,0,0,0.3);
+margin-top: 10rem ;
+border-radius: 3px;
+}
+.service .box-container .box img{
+    height: 25rem;
+}
+
+.service .box-container .box h3{
+    color: black;
+    font-size: 2.5rem;
+    padding: 1rem 0;
+}
+
+.service .box-container .box .btn{
+    margin-top: 1rem;
+    display: inline-block;
+    background-color: var(--main-color);
+    color: white;
+font-size: 1.8rem;
+border-radius: 5px;
+padding: 0 1rem;
+}
+
+.service .box-container .box .btn:hover{
+    letter-spacing: 1px;
+}
+
+.service .box-container .box:hover{
+transform: scale(1.02);
+}
+/* My Service end */
+
+
+/* Footer start */
+footer{
+    margin-top: 2rem;
+    font-size: 2rem;
+    padding: 2.5rem;
+    text-align: center;
+    color: #666;
+    background:#fff;
+}
+
+footer span{
+    color: var(--main-color);
+}
+
+
+/* Footer end */
